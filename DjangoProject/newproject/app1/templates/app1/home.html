@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <h1>Departments</h1>
+</head>
+<body>
+
+<ul>
+    {% for department in all_departments %}
+    <li> <a href="/app1/departments/{{department.id}}/">{{department.name}}</a> </li>
+    {% endfor %}
+</ul>>
+
+<h1> Employees </h1>
+
+<ul>
+    {% for employee in all_employees %}
+    <li> <a href="/app1/employees/{{employee.id}}/">{{employee.firstName}}</a> </li>
+    {% endfor %}
+</ul>>
+
+
+
+
+</body>
+</html>
